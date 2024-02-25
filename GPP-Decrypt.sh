@@ -15,6 +15,7 @@ AES_KEY='4e9906e8fcb66cc9faf49310620ffee8f496e806cc057990209b09a433b66c1b'
 run_decrypt() {
   local ENCRYPTED_PASSWORD="$1"
   local password_file="$2"
+  local BIN_KEY BIN_DATA DECRYPTED_PASSWORD
 
   # Convert the key from hex and ensure it's the correct length
   if [ "${#AES_KEY}" -ne 64 ]; then
@@ -24,13 +25,14 @@ run_decrypt() {
   BIN_KEY=$(echo $AES_KEY | xxd -r -p)
 
   # Validate and decode the encrypted password
-  if ! BIN_DATA=$(echo $ENCRYPTED_PASSWORD | base64 -d 2>/dev/null); then
+  if ! BIN_DATA=$(echo $ENCRYPTED_PASSWORD | base64 -d); then
     echo "Base64 decoding failed. Ensure the encrypted password is base64 encoded."
     exit 3
   fi
 
   # Decrypt the password and handle potential decryption errors
-  if ! DECRYPTED_PASSWORD=$(echo -n $BIN_DATA | openssl aes-256-cbc -d -A -iv 00000000000000000000000000000000 -K $BIN_KEY 2>/dev/null); then
+  DECRYPTED_PASSWORD=$(printf "%s" "$BIN_DATA" | openssl aes-256-cbc -d -A -iv 00000000000000000000000000000000 -K $BIN_KEY)
+  if [ $? -ne 0 ]; then
     echo "AES decryption failed. Check the encrypted data and the AES key."
     exit 4
   fi
@@ -41,6 +43,8 @@ run_decrypt() {
 
 # Main function
 main() {
+  local ENCRYPTED_PASSWORD OUT_FILE
+
   # Parse command-line options
   while getopts "p:o:h" opt; do
     case ${opt} in
@@ -55,6 +59,12 @@ main() {
   if [ -z "$ENCRYPTED_PASSWORD" ] || [ -z "$OUT_FILE" ]; then
     echo "Both -p (password) and -o (output file) options are required."
     usage
+  fi
+
+  # Validate output file can be created
+  if ! touch "$OUT_FILE" &>/dev/null; then
+    echo "Cannot write to output file '$OUT_FILE'. Please check permissions or path validity."
+    exit 5
   fi
 
   # Run decryption
