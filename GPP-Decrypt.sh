@@ -13,14 +13,29 @@ usage() {
 AES_KEY='4e9906e8fcb66cc9faf49310620ffee8f496e806cc057990209b09a433b66c1b'
 
 run_decrypt() {
-  # The encrypted GPP password
   local ENCRYPTED_PASSWORD="$1"
   local password_file="$2"
-  # Convert the key and data from hex and base64, respectively
+
+  # Convert the key from hex and ensure it's the correct length
+  if [ "${#AES_KEY}" -ne 64 ]; then
+    echo "Invalid AES key length."
+    exit 2
+  fi
   BIN_KEY=$(echo $AES_KEY | xxd -r -p)
-  BIN_DATA=$(echo $ENCRYPTED_PASSWORD | base64 -d)
-  # Decrypt the password and save to file
-  echo -n $BIN_DATA | openssl aes-256-cbc -d -A -iv 0 -K $BIN_KEY > "$password_file"
+
+  # Validate and decode the encrypted password
+  if ! BIN_DATA=$(echo $ENCRYPTED_PASSWORD | base64 -d 2>/dev/null); then
+    echo "Base64 decoding failed. Ensure the encrypted password is base64 encoded."
+    exit 3
+  fi
+
+  # Decrypt the password and handle potential decryption errors
+  if ! DECRYPTED_PASSWORD=$(echo -n $BIN_DATA | openssl aes-256-cbc -d -A -iv 00000000000000000000000000000000 -K $BIN_KEY 2>/dev/null); then
+    echo "AES decryption failed. Check the encrypted data and the AES key."
+    exit 4
+  fi
+
+  echo "$DECRYPTED_PASSWORD" > "$password_file"
   echo "Decrypted password saved to $password_file"
 }
 
