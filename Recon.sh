@@ -81,7 +81,7 @@ run_dir_enum() {
   fi
   
   echo "Running Directory search on port $port..."
-  gobuster dir -u "http://$TARGET:$port" -w "$DIR_WORDLIST" -q -t 50 -o "$dir_enum_out"
+  gobuster dir -u "http://$TARGET:$port" -w "$DIR_WORDLIST" -q -t 50 -o "$dir_enum_out" -b 400-404
   if [ $? -ne 0 ]; then
     echo "Directory search encountered an error."
     return
