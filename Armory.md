@@ -15,14 +15,21 @@ https://github.com/fox-it/BloodHound.py
 https://github.com/ropnop/kerbrute
 https://github.com/Kevin-Robertson/Inveigh/blob/master/Inveigh.ps1
 https://github.com/SecureAuthCorp/impacket/blob/master/examples/ticketer.py
-https://github.com/cube0x0/CVE-2021-1675/blob/main/CVE-2021-1675.py
-https://github.com/topotam/PetitPotam
 https://github.com/SnaffCon/Snaffler
 https://github.com/leoloobeek/LAPSToolkit
 https://github.com/ropnop/windapsearch
 https://github.com/byt3bl33d3r/pth-toolkit
 https://github.com/ShutdownRepo/targetedKerberoast
 https://github.com/rvazarkar/GMSAPasswordReader
+```
+
+# Exploits
+```
+https://github.com/cube0x0/CVE-2021-1675/blob/main/CVE-2021-1675.py
+https://github.com/topotam/PetitPotam
+https://raw.githubusercontent.com/backdoorhub/shell-backdoor-list/master/shell/asp/newaspcmd.asp
+https://github.com/int0x33/nc.exe/raw/master/nc.exe
+https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer64.exe
 ```
 
 ### Tunneling
@@ -41,5 +48,7 @@ https://github.com/utoni/ptunnel-ng.git
 
 ### Misc
 ```
+https://10minutemail.com/
 https://lolbas-project.github.io/
+https://github.com/FortyNorthSecurity/EyeWitness
 ```
