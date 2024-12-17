@@ -75,6 +75,7 @@ https://github.com/utoni/ptunnel-ng.git
 
 ### Misc
 ```
+https://github.com/Flangvik/SharpCollection
 https://10minutemail.com/
 https://lolbas-project.github.io/
 https://github.com/FortyNorthSecurity/EyeWitness
