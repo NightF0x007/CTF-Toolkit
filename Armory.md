@@ -7,14 +7,19 @@ https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/web
 https://github.com/EnableSecurity/wafw00f
 ```
 ```
+https://github.com/SecureAuthCorp/impacket/blob/master/examples/samrdump.py
 https://github.com/ropnop/kerbrute
 https://github.com/SnaffCon/Snaffler
 https://github.com/AlessandroZ/LaZagne
 https://raw.githubusercontent.com/dafthack/DomainPasswordSpray/master/DomainPasswordSpray.ps1
 https://github.com/clr2of8/DPAT
+https://github.com/Arvanaghi/SessionGopher
+https://github.com/gdedrouas/Exchange-AD-Privesc
 ```
 ```
-https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1
+https://github.com/adrecon/ADRecon
+https://github.com/Kevin-Robertson/Powermad
+https://github.com/PowerShellMafia/PowerSploit
 https://github.com/dmchell/SharpView
 https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors
 https://github.com/fox-it/BloodHound.py
@@ -23,12 +28,16 @@ https://github.com/SecureAuthCorp/impacket/blob/master/examples/ticketer.py
 https://github.com/leoloobeek/LAPSToolkit
 https://github.com/ropnop/windapsearch
 https://github.com/byt3bl33d3r/pth-toolkit
-https://github.com/ShutdownRepo/targetedKerberoast
 https://github.com/rvazarkar/GMSAPasswordReader
+https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
 ```
 
 ### Exploitation
 ```
+https://raw.githubusercontent.com/ShutdownRepo/impacket/dacledit/examples/dacledit.py
+https://github.com/ShutdownRepo/pywhisker.git
+https://github.com/ShutdownRepo/targetedKerberoast
+https://github.com/dirkjanm/PKINITtools
 https://github.com/cube0x0/CVE-2021-1675/blob/main/CVE-2021-1675.py
 https://github.com/topotam/PetitPotam
 https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer64.exe
