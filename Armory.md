@@ -30,6 +30,7 @@ https://github.com/byt3bl33d3r/pth-toolkit
 https://github.com/rvazarkar/GMSAPasswordReader
 https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
 https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS
+https://github.com/DominicBreuker/pspy
 ```
 
 ### Exploitation
