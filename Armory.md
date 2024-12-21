@@ -4,6 +4,7 @@ A collection of tools for CTFs, Forensics, or Engagements.
 ### Recon
 ```
 https://github.com/EnableSecurity/wafw00f
+https://github.com/ajnik/joomla-bruteforce.git
 ```
 ```
 https://github.com/SecureAuthCorp/impacket/blob/master/examples/samrdump.py
