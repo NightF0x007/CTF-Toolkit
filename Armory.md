@@ -4,7 +4,11 @@ A collection of tools for CTFs, Forensics, or Engagements.
 ### Recon
 ```
 https://github.com/EnableSecurity/wafw00f
-https://github.com/ajnik/joomla-bruteforce.git
+https://github.com/cytopia/smtp-user-enum
+https://github.com/0xZDH/o365spray
+https://github.com/dafthack/MailSniper
+https://github.com/ustayready/CredKing
+
 ```
 ```
 https://github.com/SecureAuthCorp/impacket/blob/master/examples/samrdump.py
@@ -95,4 +99,5 @@ https://lolbas-project.github.io/
 https://github.com/FortyNorthSecurity/EyeWitness
 https://www.pingcastle.com/
 https://github.com/rasta-mouse/ThreatCheck
+https://mxtoolbox.com/
 ```
