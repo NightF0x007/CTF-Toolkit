@@ -8,7 +8,6 @@ https://github.com/cytopia/smtp-user-enum
 https://github.com/0xZDH/o365spray
 https://github.com/dafthack/MailSniper
 https://github.com/ustayready/CredKing
-
 ```
 ```
 https://github.com/SecureAuthCorp/impacket/blob/master/examples/samrdump.py
@@ -49,6 +48,13 @@ https://github.com/topotam/PetitPotam
 https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer64.exe
 https://github.com/AlexisAhmed/CVE-2022-0847-DirtyPipe-Exploits
 ```
+#### Netfilter
+```
+https://github.com/google/security-research/tree/master/pocs/linux/cve-2021-22555
+https://github.com/pqlx/CVE-2022-1015
+https://github.com/Liuk3r/CVE-2023-32233
+```
+
 
 ### Shells
 ```
