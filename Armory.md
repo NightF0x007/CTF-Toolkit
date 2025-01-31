@@ -35,6 +35,7 @@ https://github.com/rvazarkar/GMSAPasswordReader
 https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
 https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS
 https://github.com/DominicBreuker/pspy
+https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/x86_64/nmap
 ```
 
 ### Exploitation
