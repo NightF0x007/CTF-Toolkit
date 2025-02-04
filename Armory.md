@@ -18,6 +18,8 @@ https://raw.githubusercontent.com/dafthack/DomainPasswordSpray/master/DomainPass
 https://github.com/clr2of8/DPAT
 https://github.com/Arvanaghi/SessionGopher
 https://github.com/gdedrouas/Exchange-AD-Privesc
+https://msrc.microsoft.com/update-guide/vulnerability
+
 ```
 ```
 https://github.com/adrecon/ADRecon
