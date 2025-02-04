@@ -20,10 +20,7 @@ https://github.com/Arvanaghi/SessionGopher
 https://github.com/gdedrouas/Exchange-AD-Privesc
 https://msrc.microsoft.com/update-guide/vulnerability
 https://github.com/hfiref0x/UACME/blob/master/README.md
-
-
-```
-```
+https://github.com/inguardians/Invoke-Clipboard/blob/master/Invoke-Clipboard.ps1
 https://github.com/adrecon/ADRecon
 https://github.com/Kevin-Robertson/Powermad
 https://github.com/PowerShellMafia/PowerSploit
