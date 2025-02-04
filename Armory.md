@@ -19,6 +19,8 @@ https://github.com/clr2of8/DPAT
 https://github.com/Arvanaghi/SessionGopher
 https://github.com/gdedrouas/Exchange-AD-Privesc
 https://msrc.microsoft.com/update-guide/vulnerability
+https://github.com/hfiref0x/UACME/blob/master/README.md
+
 
 ```
 ```
