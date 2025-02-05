@@ -46,6 +46,7 @@ https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/x86_64/nm
 ```
 https://github.com/juliourena/SharpNoPSExec
 https://github.com/0xthirteen/SharpRDP
+https://github.com/frkngksl/NimExec
 ```
 
 ### Exploitation
