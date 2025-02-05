@@ -10,6 +10,7 @@ https://github.com/dafthack/MailSniper
 https://github.com/ustayready/CredKing
 ```
 ```
+https://github.com/vivami/SauronEye
 https://github.com/SecureAuthCorp/impacket/blob/master/examples/samrdump.py
 https://github.com/ropnop/kerbrute
 https://github.com/SnaffCon/Snaffler
