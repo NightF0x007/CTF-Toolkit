@@ -51,6 +51,8 @@ https://github.com/frkngksl/NimExec
 
 ### Exploitation
 ```
+https://github.com/cube0x0/CVE-2021-1675.git
+https://github.com/Ridter/noPac
 https://raw.githubusercontent.com/ShutdownRepo/impacket/dacledit/examples/dacledit.py
 https://github.com/ShutdownRepo/pywhisker.git
 https://github.com/ShutdownRepo/targetedKerberoast
