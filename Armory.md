@@ -10,6 +10,7 @@ https://github.com/dafthack/MailSniper
 https://github.com/ustayready/CredKing
 ```
 ```
+https://github.com/canix1/ADACLScanner
 https://github.com/vivami/SauronEye
 https://github.com/SecureAuthCorp/impacket/blob/master/examples/samrdump.py
 https://github.com/ropnop/kerbrute
@@ -110,6 +111,7 @@ https://github.com/utoni/ptunnel-ng.git
 
 ### Misc
 ```
+https://github.com/canix1/ADACLScanner
 https://github.com/Flangvik/SharpCollection
 https://10minutemail.com/
 https://lolbas-project.github.io/
