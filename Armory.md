@@ -13,6 +13,7 @@ https://github.com/ustayready/CredKing
 https://github.com/canix1/ADACLScanner
 https://github.com/vivami/SauronEye
 https://github.com/SecureAuthCorp/impacket/blob/master/examples/samrdump.py
+https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_windows_amd64.exe
 https://github.com/ropnop/kerbrute
 https://github.com/SnaffCon/Snaffler
 https://github.com/AlessandroZ/LaZagne
