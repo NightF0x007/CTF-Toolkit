@@ -42,6 +42,12 @@ https://github.com/DominicBreuker/pspy
 https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/x86_64/nmap
 ```
 
+### Lateral Movement
+```
+https://github.com/juliourena/SharpNoPSExec
+https://github.com/0xthirteen/SharpRDP
+```
+
 ### Exploitation
 ```
 https://raw.githubusercontent.com/ShutdownRepo/impacket/dacledit/examples/dacledit.py
