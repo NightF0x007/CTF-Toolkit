@@ -8,6 +8,7 @@ https://github.com/cytopia/smtp-user-enum
 https://github.com/0xZDH/o365spray
 https://github.com/dafthack/MailSniper
 https://github.com/ustayready/CredKing
+https://github.com/dingtoffee/StickyParser
 ```
 ```
 https://github.com/samratashok/ADModule
