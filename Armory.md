@@ -12,6 +12,7 @@ https://github.com/dingtoffee/StickyParser
 ```
 ```
 https://github.com/samratashok/ADModule
+https://github.com/lkarlslund/Adalanche
 https://github.com/canix1/ADACLScanner
 https://github.com/vivami/SauronEye
 https://github.com/SecureAuthCorp/impacket/blob/master/examples/samrdump.py
