@@ -54,6 +54,8 @@ https://github.com/frkngksl/NimExec
 
 ### Exploitation
 ```
+https://github.com/dirkjanm/krbrelayx/blob/master/printerbug.py
+https://gist.github.com/3xocyte/cfaf8a34f76569a8251bde65fe69dccc
 https://github.com/dirkjanm/krbrelayx
 https://github.com/leechristensen/SpoolSample
 https://github.com/cube0x0/CVE-2021-1675.git
