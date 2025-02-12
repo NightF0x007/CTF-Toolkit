@@ -54,6 +54,7 @@ https://github.com/frkngksl/NimExec
 
 ### Exploitation
 ```
+https://github.com/dirkjanm/krbrelayx
 https://github.com/leechristensen/SpoolSample
 https://github.com/cube0x0/CVE-2021-1675.git
 https://github.com/Ridter/noPac
