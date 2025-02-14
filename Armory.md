@@ -54,6 +54,7 @@ https://github.com/frkngksl/NimExec
 
 ### Exploitation
 ```
+https://raw.githubusercontent.com/tothi/rbcd-attack/master/rbcd.py
 https://github.com/dirkjanm/krbrelayx/blob/master/printerbug.py
 https://gist.github.com/3xocyte/cfaf8a34f76569a8251bde65fe69dccc
 https://github.com/dirkjanm/krbrelayx
