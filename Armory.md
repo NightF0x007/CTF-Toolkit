@@ -3,6 +3,7 @@ A collection of tools for CTFs, Forensics, or Engagements.
 
 ### Recon
 ```
+https://github.com/vi/websocat
 https://github.com/EnableSecurity/wafw00f
 https://github.com/cytopia/smtp-user-enum
 https://github.com/0xZDH/o365spray
