@@ -106,7 +106,7 @@ stty raw -echo; fg;
 ls; 
 export SHELL=/bin/bash; 
 export TERM=screen; 
-stty rows 38 columns 116; 
+stty rows 60 columns 235; 
 reset;
 
 # Windows Shell Stabilization
