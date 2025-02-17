@@ -51,7 +51,7 @@ run_nmap() {
   done
   
   # Extract Web Ports
-  local web_ports=$(grep -oP '\d{1,5}/open/tcp//http' $nmap_out | awk -F '/' '{print $1}' | grep -vE '21|22|23|25|53|135|139|445|161|110|143|3306|3389|5986')
+  local web_ports=$(grep -oP '\d{1,5}/open/tcp//http' $nmap_out | awk -F '/' '{print $1}' | grep -vE '21|22|23|25|53|135|139|445|161|110|143|3306|3389|5985|5986')
   
   if [ -z "$DIR_WORDLIST" ]; then
     echo "Directory search wordlist not specified. Skipping directory brute-force."
