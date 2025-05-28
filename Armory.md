@@ -139,3 +139,8 @@ https://www.pingcastle.com/
 https://github.com/rasta-mouse/ThreatCheck
 https://mxtoolbox.com/
 ```
+
+### Cloud
+```
+https://github.com/carlospolop/AzureAppsSweep
+```
