@@ -143,4 +143,5 @@ https://mxtoolbox.com/
 ### Cloud
 ```
 https://github.com/carlospolop/AzureAppsSweep
+https://github.com/carlospolop/cloudpeass
 ```
