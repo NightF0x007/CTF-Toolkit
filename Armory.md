@@ -146,3 +146,10 @@ https://github.com/carlospolop/AzureAppsSweep
 https://github.com/carlospolop/cloudpeass
 https://github.com/carlospolop/azure_oauth_phishing_example
 ```
+
+### Forensics
+```
+https://gitlab.com/newbit/rootAVD.git
+https://github.com/Genymobile/scrcpy
+https://github.com/abrignoni/ALEAPP.git
+```
