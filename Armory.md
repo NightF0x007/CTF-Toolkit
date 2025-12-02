@@ -72,6 +72,7 @@ https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer64.exe
 https://github.com/AlexisAhmed/CVE-2022-0847-DirtyPipe-Exploits
 https://www.powershellgallery.com/packages/PoshPrivilege/0.3.0.0/Content/Scripts%5CEnable-Privilege.ps1
 https://github.com/decoder-it/psgetsystem
+https://github.com/logangoins/SharpSuccessor
 ```
 #### Netfilter
 ```
