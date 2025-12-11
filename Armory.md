@@ -127,6 +127,7 @@ https://github.com/klsecservices/rpivot.git
 https://github.com/lukebaggett/dnscat2-powershell.git
 https://github.com/iagox86/dnscat2.git
 https://github.com/utoni/ptunnel-ng.git
+https://github.com/nicocha30/ligolo-ng
 ```
 
 ### Misc
