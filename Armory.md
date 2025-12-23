@@ -134,7 +134,6 @@ https://github.com/nicocha30/ligolo-ng/releases/
 ### Misc
 ```
 https://github.com/canix1/ADACLScanner
-https://github.com/Flangvik/SharpCollection
 https://10minutemail.com/
 https://lolbas-project.github.io/
 https://github.com/FortyNorthSecurity/EyeWitness
@@ -156,4 +155,10 @@ https://gitlab.com/newbit/rootAVD.git
 https://github.com/Genymobile/scrcpy
 https://github.com/abrignoni/ALEAPP.git
 https://github.com/omerbenamram/evtx
+```
+
+### Test Binaries
+```
+https://github.com/Flangvik/SharpCollection
+https://github.com/S3cur3Th1sSh1t/PowerSharpPack/tree/master/PowerSharpBinaries
 ```
