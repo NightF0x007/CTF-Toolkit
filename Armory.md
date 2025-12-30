@@ -73,6 +73,7 @@ https://github.com/AlexisAhmed/CVE-2022-0847-DirtyPipe-Exploits
 https://www.powershellgallery.com/packages/PoshPrivilege/0.3.0.0/Content/Scripts%5CEnable-Privilege.ps1
 https://github.com/decoder-it/psgetsystem
 https://github.com/logangoins/SharpSuccessor
+https://github.com/kimusan/pkwner/blob/main/pkwner.sh
 ```
 #### Netfilter
 ```
