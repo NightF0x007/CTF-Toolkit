@@ -74,6 +74,7 @@ https://www.powershellgallery.com/packages/PoshPrivilege/0.3.0.0/Content/Scripts
 https://github.com/decoder-it/psgetsystem
 https://github.com/logangoins/SharpSuccessor
 https://github.com/kimusan/pkwner/blob/main/pkwner.sh
+https://github.com/giuliano108/SeBackupPrivilege
 ```
 #### Netfilter
 ```
