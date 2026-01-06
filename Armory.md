@@ -76,6 +76,7 @@ https://github.com/logangoins/SharpSuccessor
 https://github.com/kimusan/pkwner/blob/main/pkwner.sh
 https://github.com/giuliano108/SeBackupPrivilege
 https://github.com/micahvandeusen/gMSADumper
+https://github.com/CravateRouge/bloodyAD
 ```
 #### Netfilter
 ```
