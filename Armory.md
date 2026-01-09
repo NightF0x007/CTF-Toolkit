@@ -77,6 +77,8 @@ https://github.com/kimusan/pkwner/blob/main/pkwner.sh
 https://github.com/giuliano108/SeBackupPrivilege
 https://github.com/micahvandeusen/gMSADumper
 https://github.com/CravateRouge/bloodyAD
+https://github.com/antonioCoco/RunasCs/
+https://github.com/peewpw/Invoke-WCMDump
 ```
 #### Netfilter
 ```
