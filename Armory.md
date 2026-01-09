@@ -10,6 +10,8 @@ https://github.com/0xZDH/o365spray
 https://github.com/dafthack/MailSniper
 https://github.com/ustayready/CredKing
 https://github.com/dingtoffee/StickyParser
+https://github.com/vi/websocat/releases
+https://github.com/PalindromeLabs/STEWS
 ```
 ```
 https://github.com/samratashok/ADModule
