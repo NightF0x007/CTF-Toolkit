@@ -46,6 +46,7 @@ https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
 https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS
 https://github.com/DominicBreuker/pspy
 https://github.com/andrew-d/static-binaries/blob/master/binaries/linux/x86_64/nmap
+https://github.com/CravateRouge/bloodyAD
 ```
 
 ### Lateral Movement
@@ -78,9 +79,9 @@ https://github.com/logangoins/SharpSuccessor
 https://github.com/kimusan/pkwner/blob/main/pkwner.sh
 https://github.com/giuliano108/SeBackupPrivilege
 https://github.com/micahvandeusen/gMSADumper
-https://github.com/CravateRouge/bloodyAD
 https://github.com/antonioCoco/RunasCs/
 https://github.com/peewpw/Invoke-WCMDump
+https://github.com/kimci86/bkcrack
 ```
 #### Netfilter
 ```
