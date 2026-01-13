@@ -81,7 +81,7 @@ https://github.com/giuliano108/SeBackupPrivilege
 https://github.com/micahvandeusen/gMSADumper
 https://github.com/antonioCoco/RunasCs/
 https://github.com/peewpw/Invoke-WCMDump
-https://github.com/kimci86/bkcrack
+https://github.com/kimci86/bkcrack/releases
 ```
 #### Netfilter
 ```
