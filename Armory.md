@@ -116,13 +116,12 @@ https://github.com/IppSec/forward-shell/blob/master/forward-shell.py
 https://github.com/epinna/weevely3
 
 # Linux Shell Stabilization
-script /dev/null -qc /bin/bash #/dev/null is to not store anything
+script /dev/null -qc /bin/bash
 (inside the nc session) CTRL+Z;
-stty raw -echo; fg; 
-ls; 
-export SHELL=/bin/bash; 
-export TERM=screen; 
-stty rows 60 columns 235; 
+stty raw -echo; fg;
+export SHELL=/bin/bash;
+export TERM=screen;
+stty rows 60 columns 235;
 reset;
 
 # Windows Shell Stabilization
