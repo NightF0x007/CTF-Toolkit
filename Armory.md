@@ -96,6 +96,11 @@ https://github.com/Liuk3r/CVE-2023-32233
 ```
 # Asp Backdoor
 https://raw.githubusercontent.com/backdoorhub/shell-backdoor-list/master/shell/asp/newaspcmd.asp
+https://github.com/jbarcia/Web-Shells/tree/master/laudanum/asp
+
+# Aspx Webshell
+https://github.com/samratashok/nishang/raw/refs/heads/master/Antak-WebShell/antak.aspx
+https://github.com/jbarcia/Web-Shells/raw/refs/heads/master/laudanum/aspx/shell.aspx
 
 # Netcat executable
 https://github.com/int0x33/nc.exe/raw/master/nc.exe
