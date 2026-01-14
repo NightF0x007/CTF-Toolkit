@@ -12,6 +12,7 @@ https://github.com/ustayready/CredKing
 https://github.com/dingtoffee/StickyParser
 https://github.com/vi/websocat/releases
 https://github.com/PalindromeLabs/STEWS
+https://github.com/thewhiteh4t/FinalRecon
 ```
 ```
 https://github.com/samratashok/ADModule
