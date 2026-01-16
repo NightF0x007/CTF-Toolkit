@@ -95,7 +95,6 @@ https://github.com/Liuk3r/CVE-2023-32233
 ### Shells
 ```
 # Asp Backdoor
-https://raw.githubusercontent.com/backdoorhub/shell-backdoor-list/master/shell/asp/newaspcmd.asp
 https://github.com/jbarcia/Web-Shells/tree/master/laudanum/asp
 
 # Aspx Webshell
