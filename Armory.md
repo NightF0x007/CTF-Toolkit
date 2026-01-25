@@ -184,4 +184,5 @@ https://github.com/S3cur3Th1sSh1t/PowerSharpPack/tree/master/PowerSharpBinaries
 ### Cheat Sheets
 ```
 https://swisskyrepo.github.io/InternalAllTheThings/redteam/escalation/windows-privilege-escalation/
+https://github.com/geeksniper/windows-privilege-escalation
 ```
