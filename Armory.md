@@ -159,6 +159,7 @@ https://github.com/FortyNorthSecurity/EyeWitness
 https://www.pingcastle.com/
 https://github.com/rasta-mouse/ThreatCheck
 https://mxtoolbox.com/
+https://github.com/blacklanternsecurity/writehat
 ```
 
 ### Cloud
