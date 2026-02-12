@@ -186,4 +186,5 @@ https://github.com/S3cur3Th1sSh1t/PowerSharpPack/tree/master/PowerSharpBinaries
 ```
 https://swisskyrepo.github.io/InternalAllTheThings/redteam/escalation/windows-privilege-escalation/
 https://github.com/geeksniper/windows-privilege-escalation
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md
 ```
